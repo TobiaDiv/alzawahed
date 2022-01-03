@@ -1,0 +1,91 @@
+<template>
+  <the-header/>
+  <router-view/>
+  <base-card/>
+</template>
+<script>
+import TheHeader from "@/components/layout/TheHeader.vue"
+import BaseCard from "@/components/UI/BaseCard.vue"
+export default {
+  name:"App",
+  components:{
+    TheHeader,
+    BaseCard
+  }
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;700&family=Lobster&family=Rubik&display=swap');
+:root{
+  /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 125; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color-second: 45;
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --switch-section: hsl(var(--hue-color), 100%, 99%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color-second), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color-second), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: hsl(0, 0%, 100%);
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+}
+
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+.text-color{
+    color: var(--text-color);
+}
+.title-color{
+  color: var(--first-color);
+}
+.title-color-light{
+  color: var(--text-color-light);
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>
