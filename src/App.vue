@@ -1,23 +1,38 @@
 <template>
-  <the-header/>
-  <router-view/>
-  <base-card/>
+  <the-header />
+  <router-view />
+  <base-card />
 </template>
 <script>
-import TheHeader from "@/components/layout/TheHeader.vue"
-import BaseCard from "@/components/UI/BaseCard.vue"
-export default {
-  name:"App",
-  components:{
-    TheHeader,
-    BaseCard
-  }
-}
+  import TheHeader from "@/components/layout/TheHeader.vue";
+  import BaseCard from "@/components/UI/BaseCard.vue";
+  export default {
+    name: "App",
+    components: {
+      TheHeader,
+      BaseCard,
+    },
+    mounted() {
+      this.setTemplateDirection();
+    },
+    methods: {
+      setTemplateDirection() {
+        const htmlLang = localStorage.getItem("htmlLang");
+        const dir = localStorage.getItem("dir");
+        const removedClass = localStorage.getItem("removedClass");
+        const addedClass = localStorage.getItem("addedClass");
+        document.querySelector("html").setAttribute("lang", htmlLang);
+        document.querySelector("html").setAttribute("dir", dir);
+        document.querySelector("html").classList.remove(removedClass);
+        document.querySelector("html").classList.add(addedClass);
+      },
+    },
+  };
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;700&family=Lobster&family=Rubik&display=swap');
-:root{
-  /*========== Colors ==========*/
+  @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;700&family=Lobster&family=Rubik&display=swap");
+  :root {
+    /*========== Colors ==========*/
     /* Change favorite color */
     --hue-color: 125; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
     --hue-color-second: 45;
@@ -39,9 +54,9 @@ export default {
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -49,43 +64,42 @@ export default {
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-    --mb-0-25: .25rem;
-    --mb-0-5: .5rem;
-    --mb-0-75: .75rem;
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-}
+  }
 
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-.text-color{
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
+  .text-color {
     color: var(--text-color);
-}
-.title-color{
-  color: var(--first-color);
-}
-.title-color-light{
-  color: var(--text-color-light);
-}
+  }
+  .title-color {
+    color: var(--first-color);
+  }
+  .title-color-light {
+    color: var(--text-color-light);
+  }
 
-#nav {
-  padding: 30px;
-}
+  #nav {
+    padding: 30px;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
 </style>
