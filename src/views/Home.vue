@@ -7,7 +7,7 @@
                 <img src="@/assets/home/all-logos.png" class="img-fluid">
             </div>
             <div class="col-xs-12 col-md-6 text-center" style="margin-top: 38px;">
-                <h2 class="text-center font-weight-bolder title-color">ALzawahed Group</h2>
+                <h2 class="text-center font-weight-bolder title-color">{{$t('message')}}</h2>
                 <p class="text-color">
                     We established the Al-Zawahid Foundation in 1999 to be a national institution whose aim is to 
                     form an effective nucleus in the business sector in the Kingdom of Saudi Arabia. With the experience and 
