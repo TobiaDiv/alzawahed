@@ -256,12 +256,6 @@ setup() {
 </script>
 
 <style scoped>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'El Messiri', sans-serif;
-}
 .btn-color{
     background-color: hsl(222deg 91% 33%);
     color: var(--container-color);

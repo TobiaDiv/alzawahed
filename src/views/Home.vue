@@ -7,57 +7,39 @@
                 <img src="@/assets/home/all-logos.png" class="img-fluid">
             </div>
             <div class="col-xs-12 col-md-6 text-center" style="margin-top: 38px;">
-                <h2 class="text-center font-weight-bolder title-color">ALzawahed Group</h2>
-                <p class="text-color">
-                    We established the Al-Zawahid Foundation in 1999 to be a national institution whose aim is to 
-                    form an effective nucleus in the business sector in the Kingdom of Saudi Arabia. With the experience and 
-                    expertise necessary to be aware of the effectiveness of work and production, we are the ascetics and through 
-                    the multiplicity of their work, they contribute to spreading the production awareness and the practical culture 
-                    of our society and our homeland alike. 2030 through the multiplicity of our domains and areas of our business 
-                    that benefit the individual and society.
-                </p>
-                <button class="btn btn-color">Read More</button>
+                <h2 class="text-center font-weight-bolder title-color">{{$t('h-header-1')}}</h2>
+                <p class="text-color">{{$t('h-prag-1')}}</p>
+                <button class="btn btn-color">{{$t('h-main-btn')}}</button>
             </div>
         </div>
     </div>
     <!--==================== Why us ====================-->
     <section class="qoute">
     <div class="container">
-        <q>
-        One of the most active, largest and leading company in Saudi Arabia.
-        </q>
-        <span>ALzawahed Group</span>
+        <q>{{$t('h-qoute-1')}}</q>
+        <span>{{$t('h-header-1')}}</span>
         <div class="row mt-4">
             <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card border-0 shadow rounded-xs pt-5">
                     <div class="card-body"> <i class="uil uil-eye icon-lg icon-color icon-bg-color icon-bg-circle mb-3"></i>
-                        <h4 class="mt-4 mb-3 fon">Our vision</h4>
-                        <p>We seek through the multiplicity of our business fields to support
-                        many of the concepts that individuals, society and the business
-                        sector need. We always want to have a distinctive imprint
-                        of quality and credibility, which is the most important value
-                        that we always care to maintain.</p>
+                        <h4 class="mt-4 mb-3 fon">{{$t('vision-header')}}</h4>
+                        <p>{{$t('h-vision')}}</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card border-0 shadow rounded-xs pt-5">
                     <div class="card-body"> <i class="uil uil-constructor icon-lg icon-color icon-bg-color icon-bg-circle mb-3"></i>
-                        <h4 class="mt-4 mb-3 fon">Our mission</h4>
-                        <p>We seek through the multiplicity of our business fields to support many of the concepts that individuals, society and the business sector need. We always want to have a distinctive imprint of quality and credibility, which is the most important value that we always care to maintain.</p>
+                        <h4 class="mt-4 mb-3 fon">{{$t('mission-header')}}</h4>
+                        <p>{{$t('h-mission')}}</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="card border-0 shadow rounded-xs pt-5">
                     <div class="card-body"> <i class="uil uil-envelope-share icon-lg icon-color icon-bg-color icon-bg-circle mb-3"></i>
-                        <h4 class="mt-4 mb-3 fon">Our message</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam</p>
+                        <h4 class="mt-4 mb-3 fon">{{$t('message-header')}}</h4>
+                        <p>{{$t('h-message')}}</p>
                     </div>
                 </div>
             </div>
@@ -70,23 +52,23 @@
                 <ul>
                 <li>
                     <div class="timeline-content">
-                    <h3 class="date">Lunch Trendy Department | 2017-Present</h3>
-                    <h1>IT Solutions and Marketing</h1>
-                    <p>Al-Zawahid Foundation has always developed and searched for everything new and useful for society and the business sector, so we recently launched the marketing departments at others and providing IT solutions</p>
+                    <h3 class="date">{{$t('h-qual1-date')}}</h3>
+                    <h1>{{$t('h-qual1-haad')}}</h1>
+                    <p>{{$t('h-qual1-prag')}}</p>
                     </div>
                 </li>
                 <li>
                     <div class="timeline-content">
-                    <h3 class="date">Development | 2010-2015</h3>
-                    <h1>Constructions and Custom clearance</h1>
-                    <p>After we covered the transportation and security needs of others, we developed our organization to contain customs clearance and contracting, so we worked to establish a specialized team to carry out these two jobs with high quality and mastery.</p>
+                    <h3 class="date">{{$t('h-qual2-date')}}</h3>
+                    <h1>{{$t('h-qual2-haad')}}</h1>
+                    <p>{{$t('h-qual2-prag')}}</p>
                     </div>
                 </li>
                 <li>
                     <div class="timeline-content">
-                    <h3 class="date">Stablishing | 1999-2000</h3>
-                    <h1>Security Guard Services and Transportation</h1>
-                    <p>We began to equip, train and search for qualified and conscious youth who we can train and employ to maintain the security and safety of society</p>
+                    <h3 class="date">{{$t('h-qual3-date')}}</h3>
+                    <h1>{{$t('h-qual3-haad')}}</h1>
+                    <p>{{$t('h-qual3-prag')}}</p>
                     </div>
                 </li>
                 </ul>
@@ -95,19 +77,18 @@
     <!--==================== SERVICES ====================-->
     <section class="container-services">
         <div class="container text-center">
-        <h2 class="text-center text-color services__header">Services</h2>
-        <h6 class="text-center">What I Ofer</h6>
+        <h2 class="text-center text-color services__header">{{$t('h-title-serv')}}</h2>
+        <h6 class="text-center">{{$t('h-subtitle-serv')}}</h6>
         <div class="row">
             <!--========== SERVICES 1 ==========-->
             <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
                 <div class="align-self-stretch">
                     <i class="uil uil-desktop services__icon"></i>
-                    <h3 class="services__title">ALzawahed <br> IT Solutions</h3>
-                    <p>We have the principle of continuous development of the latest technologies as 
-                        well as contributing to scientific research and social communication</p>
+                    <h3 class="services__title">{{$t('it')}}</h3>
+                    <p>{{$t('h-prag1-serv')}}</p>
                 </div>
                 <span class="services__button">
-                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal1">View More</button>
+                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal1">{{$t('h-serv-btn')}}</button>
                 </span>
             </div>
 
@@ -115,21 +96,12 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="services__title">ALzawahed <br> IT Solutions</h4>
+                                <h4 class="services__title">{{$t('it')}}</h4>
                                 <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                             </div>
 
                             <div class="modal-body">
-                                Desktop, Laptop, Mobile devices
-                                Servers All Brands & Models , Storage and Network Systems
-                                VoIP Phone System
-                                Email, Database, Web, and Mobile Systems
-                                Access Control and Security Systems
-                                Operating Systems & Productivity Software Publishing
-                                ERP ,Database, Storage & Backup Software Publishing
-                                Business Analytics & Enterprise Software
-                                Video Game Software
-                                Design, Editing & Rendering Software
+                                {{$t('h-medal1-serve')}}
                             </div>
                         </div>
                     </div>
@@ -139,11 +111,11 @@
             <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
                 <div>
                     <i class="uil uil-user services__icon"></i>
-                    <h3 class="services__title">ALzawahed <br> Services & Security Guards</h3>
-                    <p>Characterized by efficiency, experience and excellence.</p>
+                    <h3 class="services__title">{{$t('security')}}</h3>
+                    <p>{{$t('h-prag2-serv')}}</p>
                 </div>
                 <span class="services__button">
-                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal2">View More</button>
+                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal2">{{$t('h-serv-btn')}}</button>
                 </span>
             </div>
 
@@ -151,20 +123,12 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="services__model-title">ALzawahed <br> Designer</h4>
+                                <h4 class="services__model-title">{{$t('security')}}</h4>
                                 <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                             </div>
 
                             <div class="modal-body">
-                                Protection and guard.
-                                Check parking and internal squares.
-                                Check doors and Windows and seal.
-                                Examination of any protection tools.
-                                Inspection tools warning.
-                                Check power sources and security reserve.
-                                Guarded and secure screening deficiencies where necessary.
-                                And to monitor the security guards and unit questions traditional famous
-                                ( When where how and why ) In every visit to the facility
+                                {{$t('h-medal2-serve')}}
                             </div>
                         </div>
                     </div>
@@ -174,26 +138,23 @@
             <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
                 <div>
                     <i class="uil uil-truck services__icon"></i>
-                    <h3 class="services__title">ALzawahed <br> Freight & Logistics</h3>
-                    <p>Specialization in the area of our work to provide the best of services and punctuality in the timing of delivery</p>
+                    <h3 class="services__title">{{$t('logistics')}}</h3>
+                    <p>{{$t('h-prag3-serv')}}</p>
                 </div>
                 <span class="services__button">
-                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal4">View More</button>
+                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal4">{{$t('h-serv-btn')}}</button>
                 </span>
             </div>
                 <div class="modal fade" id="myModal4" data-bs-backdrop="static">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="services__model-title">ALzawahed <br> Designer</h4>
+                                <h4 class="services__model-title">{{$t('logistics')}}</h4>
                                 <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                             </div>
 
                             <div class="modal-body">
-                                A Saudi Corporation alzawahed Corporation 100% Saudi capital - managed by Saudi youths with high
-                                efficiency of their customer service, innovation and the development of road transport and promotion 00
-                                Alzawahed Foundation of all transport services the radiator, frozen, dry and logistics services for customers
-                                in all cities
+                                {{$t('h-medal3-serve')}}
                             </div>
                         </div>
                     </div>
@@ -203,26 +164,23 @@
             <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
                 <div>
                     <i class="uil uil-bag services__icon"></i>
-                    <h3 class="services__title">ALzawahed <br> Customs Clearance</h3>
-                    <p>we are very keen in serving our customers and provide them with best of our services</p>
+                    <h3 class="services__title">{{$t('clearance')}}</h3>
+                    <p>{{$t('h-prag4-serv')}}</p>
                 </div>
                 <span class="services__button">
-                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal5">View More</button>
+                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal5">{{$t('h-serv-btn')}}</button>
                 </span>
             </div>
                 <div class="modal fade" id="myModal5" data-bs-backdrop="static">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="services__model-title">ALzawahed <br> Designer</h4>
+                                <h4 class="services__model-title">{{$t('clearance')}}</h4>
                                 <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                             </div>
 
                             <div class="modal-body">
-                                to keen serve our customers and provide the best of our services and need to contact us at work and we
-                                will find the fastest completion of customs clearance transactions this requires us Web site (Internet) until we serve our customers and strive to provide the best services in line with the rapid development of
-                                e-Government and the activation of a special account for automated alsdeld service and conversion of the
-                                collection of customs duties and thus facilitate contribute proceeds at MAM Uncle Lei customs to achieve
+                                {{$t('h-medal4-serve')}}
                             </div>
                         </div>
                     </div>
@@ -232,30 +190,24 @@
             <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
                 <div>
                     <i class="uil uil-megaphone services__icon"></i>
-                    <h3 class="services__title">ALzawahed <br> Contracting</h3>
-                    <p>Fundamental pillar in the realm and scope of construction and building, basic and infrastructure works and road works</p>
+                    <h3 class="services__title">{{$t('contarcting')}}</h3>
+                    <p>{{$t('h-prag5-serv')}}</p>
                 </div>
 
                 <span class="services__button">
-                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal6">View More</button>
+                    <button class="btn btn-color uil uil-arrow-down-right button__icon" data-bs-toggle="modal" data-bs-target="#myModal6">{{$t('h-serv-btn')}}</button>
                 </span>
             </div>
                 <div class="modal fade" id="myModal6" data-bs-backdrop="static">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="services__model-title">ALzawahed <br> Designer</h4>
+                                <h4 class="services__model-title">{{$t('contarcting')}}</h4>
                                 <button class="btn-close ms-auto" data-bs-dismiss="modal"></button>
                             </div>
 
                             <div class="modal-body">
-                                · Attention and action on the operationalization of the emergency regime
-                                · Provide database and information about the nature of the Treaty.
-                                · Provide a means of communication so rapid and direct towards an orgasm.
-                                · The adoption of simple language to communicate short and quick and clear
-                                · Provide each student numbers I see his fairway or Ranger
-                                · Quickly reporting any source t natural or mortal threat
-                                · Forecast of occurrence of risk is an important part of the security of the us nation website
+                                {{$t('h-medal5-serve')}}
                             </div>
                         </div>
                     </div>
@@ -267,7 +219,7 @@
     <section class="container">
         <div class="con">
             <div class="heading">
-                <h3>Photo <span>Gallery</span></h3>
+                <h3>{{$t('h-header-photo1')}} <span>{{$t('h-header-photo2')}}</span></h3>
             </div>
             <div class="box">
                 <div class="dream">
@@ -302,12 +254,6 @@ export default {
 </script>
 
 <style scoped>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'El Messiri', sans-serif;
-}
 /* main background */
 .all-logos {
     margin-top: 70px;
@@ -328,15 +274,6 @@ export default {
     text-align: center;
     color: var(--text-color);
     font-weight: bolder;
-}
-.qoute::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 5vh;
-    background-color: rgb(0, 0, 0/75);
 }
 .qoute .container {
     position: relative;

@@ -300,11 +300,6 @@ export default {
 </script>
 
 <style scoped>
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'El Messiri', sans-serif;
-}
 .bg-image{
     background-image: url('../assets/logistics/logistics-bg.png');
     background-attachment: fixed;

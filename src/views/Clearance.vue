@@ -192,11 +192,6 @@ export default {
 </script>
 
 <style scoped>
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'El Messiri', sans-serif;
-}
 .all-logos{
     background: #fbf4fb;
 }
