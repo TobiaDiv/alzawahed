@@ -3,6 +3,7 @@
   "message-header": "OUR MESSAGE",
   "mission-header": "OUR MISSION",
   "vision-header": "OUR VISION",
+  
   // header
   "home": "HOME",
   "services": "OUR SERVICES",
@@ -79,4 +80,5 @@
   "contact-2-list-2" : "Is your physical strength intact?",
   "contact-2-list-3" : "Can you commit to professional training?",
   "contact-2-list-4" : "Can you pass the assessment?"
+  
 }
