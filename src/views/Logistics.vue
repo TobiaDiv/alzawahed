@@ -41,7 +41,7 @@
             <div class="col-xs-12 col-md-6">
                 <img src="@/assets/logistics-logo-final.png" class="img-fluid">
             </div>
-            <div class="col-xs-12 col-md-6 text-center" style="margin-top: 100px;">
+            <div class="col-xs-12 col-md-6 d-flex text-center" style="margin-top: 100px;">
                 <h2 class="text-center font-weight-bolder title-color mb-4">Alzawahed Freight & Logistics</h2>
                 <p class="subtitle mb-4">
                     Welcome to Alzawahed Freight & Logistics … one of the leading Freight & logistics company recognized 
@@ -49,7 +49,7 @@
                     across the world, empowered by a highly trained and experienced professionals,  we constantly work towards 
                     achieving customer delight!
                 </p>
-                <button class="btn btn-color ms-3"><i class="uil uil-columns"></i> GET YOUR QOUTE</button>
+                <button class="btn btn-color"><i class="uil uil-columns"></i> GET YOUR QOUTE</button>
             </div>
         </div>
     </section>
@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-lg-3">
-                    <div class="bg-secondary left-hand-path">
+                    <div class="bg-secondary left-hand-path d-flex align-items-centers" style="flex-direction: column">
                         <h4 class="font-weight-bold text-center text-light mb-2">Get Benefits worth</h4>
                         <h1 class="font-weight-bold text-center text-light">$250</h1>
                         <button class="btn btn-color-alt text-light btn-center">GET A QOUTE <i class="uil uil-arrow-right"></i></button>
