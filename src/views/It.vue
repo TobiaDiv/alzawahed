@@ -4,10 +4,10 @@
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white">
-                    <h4 class="font-weight-bold">Quick and Reliable <span> Services</span></h4>
-                    <h1 class="mb-3 font-weight-bold offer">Up to 25% off</h1>
-                    <MDBBtn tag="a" lg outline="light" href="#!" role="button"><i class="uil uil-columns"></i> GET A QOUTE</MDBBtn>
-                    <button class="btn btn-success ms-3"><i class="uil uil-chart"></i> GET A CONSULTATION</button>
+                    <h4 class="font-weight-bold">{{$t('it-header-caru1')}} <span> {{$t('it-header-caru2')}}</span></h4>
+                    <h1 class="mb-3 font-weight-bold offer">{{$t('it-header-caru3')}}</h1>
+                    <MDBBtn tag="a" lg outline="light" href="#!" role="button"><i class="uil uil-columns"></i> {{$t('it-btn-caru1')}}</MDBBtn>
+                    <button class="btn btn-success ms-3"><i class="uil uil-chart"></i> {{$t('it-btn-caru2')}}</button>
                 </div>
             </div>
         </div>
@@ -20,15 +20,11 @@
                     <img src="@/assets/it-logo.png" class="img-fluid">
                 </div>
                 <div class="col-xs-12 col-md-6 text-center" style="margin-top: 80px;">
-                    <h2 class="text-center font-weight-bolder text-success">We are on Alzawahed contracting</h2>
+                    <h2 class="text-center font-weight-bolder text-success">{{$t('it-header')}}</h2>
                     <p class="subtitle">
-                        In 1999 Mr. Ibrahim Raslan Alenazi has founder Al-Zawahed Group. Alzawahed group is trading in various sectors e.g., IT, computer, marketing, security guards, and other sectors. Al Zawahed IT solution has partnerships with STC, Zain, Mobily and other major ISP. As a result of our experience in the Saudi labor market and information technology, the company reached the re-sale of
-                        business telecommunications and IT services according to the Saudi investment regulation. Since our start, we are engaged in the
-                        civilizational, industrial, informational and Technology development by providing better services to our clients.
-                        We offer more than sixteen products from our valuable partners to our customers as integrated business solutions using the infrastructure, towers, Data Center and equipment of telecom partners. In addition to others technology products, in -developing our
-                        business to fulfill the goal of the 2030 vision.
+                        {{$t('it-prag')}}
                     </p>
-                    <button class="btn btn-success ms-3"><i class="uil uil-columns"></i> GET YOUR QOUTE</button>
+                    <button class="btn btn-success ms-3"><i class="uil uil-columns"></i> {{$t('logi-btn')}}</button>
                 </div>
             </div>
         </div>
@@ -37,50 +33,50 @@
     <section class="mt-5 mb-5 p-5" style="background: #f5f5f5">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <div class="bg-secondary left-hand-path">
-                        <h6 class="font-weight-bold text-center text-light mb-2">Get Benefits worth</h6>
-                        <button class="btn btn-success text-light">GET A QOUTE <i class="uil uil-arrow-right"></i></button>
+                <div class="col-xs-12 col-lg-3">
+                    <div class="bg-secondary left-hand-path d-flex align-items-centers" style="flex-direction: column">
+                        <h6 class="font-weight-bold text-center text-light mb-2">{{$t('logi-aou-left')}}</h6>
+                        <button class="btn btn-success text-light">{{$t('it-btn-caru1')}} <i class="uil uil-arrow-right"></i></button>
                     </div>
                 </div>
-                <div class="col-9">
-                    <h1 class="mb-3 font-weight-bold offer mb-5 text-success">Awesome Services</h1>
+                <div class="col-xs-12 col-lg-9">
+                    <h1 class="mb-3 font-weight-bold offer mb-5 text-success">{{$t('it-header-2')}}</h1>
                     <div class="row">
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-desktop d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">Computer Hardware</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-1')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-presentation-check d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">Software Product</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-2')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-user-check d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">Information Technology</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-3')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-credit-card d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">Cisco Technology</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-4')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-list-ul d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">Internet Access</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-5')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-cloud-upload d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">IP-VPN</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-6')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-coins d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">IP DiD/DoD Service</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-7')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-cloud-data-connection d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">L2VPN VPLS</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-8')}}</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-hdd d-inline fs-1 text-success"></i>
-                            <h5 class="d-inline ms-1">PLL Service</h5>
+                            <h5 class="d-inline ms-1">{{$t('it-icon-9')}}</h5>
                         </div>
                     </div>
                 </div>
@@ -90,40 +86,40 @@
     <!-- Latest News -->
     <section>
         <div class="container">
-            <h1 class="text-center font-weight-bold mb-5">Latest News</h1>
+            <h1 class="text-center font-weight-bold mb-5">{{$t('it-header-3')}}</h1>
             <div class="row">
-                <div class="col-6 bg-news p-5">
+                <div class="col-xs-12 col-lg-6 bg-news p-5 mb-3">
                     <div style="opacity:0.9">
-                    <h1 class="text-light">2 month payday advances Have you got a foul credit history? You may be exactly the type of one who the afternoon</h1>
-                    <p class="text-light"><i class="uil uil-user"></i> admin | <i class="uil uil-calender"></i> January 18, 2021 | <i class="uil uil-tag"></i> usa payday loans</p>
+                    <h1 class="text-light">{{$t('it-subhead')}}</h1>
+                    <p class="text-light"><i class="uil uil-user"></i> {{$t('it-person')}} | <i class="uil uil-calender"></i> {{$t('it-date')}} | <i class="uil uil-tag"></i> {{$t('it-tag')}}</p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-xs-12 col-lg-6">
                     <div class="row">
                         <div class="col-12">
-                            <h5 class="mb-1">Can wages which can be my Garnished After Bankruptcy?</h5>
-                            <p><small class="text-muted"><i class="uil uil-user"></i> admin | <i class="uil uil-calender"></i> January 17, 2021</small></p>
-                            <p class="mt-1">Can wages which can be my Garnished After Bankruptcy? Can wages which are my Garnished After Bankru…</p>
+                            <h5 class="mb-1">{{$t('it-news-header1')}}</h5>
+                            <p><small class="text-muted"><i class="uil uil-user"></i> {{$t('it-person')}} | <i class="uil uil-calender"></i> {{$t('it-subdate')}}</small></p>
+                            <p class="mt-1">{{$t('it-news-prag1')}}</p>
                         </div>
                         <div class="col-12">
-                            <h5 class="mb-1 mt-4">Predatory payday loans: Enter at your own personal risk</h5>
-                            <p><small class="text-muted"><i class="uil uil-user"></i> admin | <i class="uil uil-calender"></i> January 17, 2021</small></p>
-                            <p class="mt-1">Predatory payday loans: Enter at your own personal risk ThereвЂ™s a reason that is good payday…</p>
+                            <h5 class="mb-1 mt-4">{{$t('it-news-header2')}}</h5>
+                            <p><small class="text-muted"><i class="uil uil-user"></i> {{$t('it-person')}} | <i class="uil uil-calender"></i> {{$t('it-subdate')}}</small></p>
+                            <p class="mt-1">{{$t('it-news-prag2')}}</p>
                         </div>
                         <div class="col-12">
-                            <h5 class="mb-1 mt-4">Moneytree Agrees to pay for $500,000 to remain Alleged Payday Loan Violations</h5>
-                            <p><small class="text-muted"><i class="uil uil-user"></i> admin | <i class="uil uil-calender"></i> January 17, 2021</small></p>
-                            <p class="mt-1">Moneytree Agrees to pay for $500,000 to remain Alleged Payday Loan Violations Moneytree -loans-dev …</p>
+                            <h5 class="mb-1 mt-4">{{$t('it-news-header3')}}</h5>
+                            <p><small class="text-muted"><i class="uil uil-user"></i> {{$t('it-person')}} | <i class="uil uil-calender"></i> {{$t('it-subdate')}}</small></p>
+                            <p class="mt-1">{{$t('it-news-prag3')}}</p>
                         </div>
                         <div class="col-12">
-                            <h5 class="mb-1 mt-4">one hour Payday Loans with No Credit always Check, from the Direct Lender</h5>
-                            <p><small class="text-muted"><i class="uil uil-user"></i> admin | <i class="uil uil-calender"></i> January 17, 2021</small></p>
-                            <p class="mt-1">one hour Payday Loans with No Credit always Check, from the Direct Lender Apply On The Web Fil…</p>
+                            <h5 class="mb-1 mt-4">{{$t('it-news-header4')}}</h5>
+                            <p><small class="text-muted"><i class="uil uil-user"></i> {{$t('it-person')}} | <i class="uil uil-calender"></i> {{$t('it-subdate')}}</small></p>
+                            <p class="mt-1">{{$t('it-news-prag4')}}</p>
                         </div>
                         <div class="col-12">
-                            <h5 class="mb-1 mt-4">cashland application that is online paperless loan procedure ...</h5>
-                            <p><small class="text-muted"><i class="uil uil-user"></i> admin | <i class="uil uil-calender"></i> January 17, 2021</small></p>
-                            <p class="mt-1">cashland application that is online paperless loan procedure allows you to get use of the s Discove…</p>
+                            <h5 class="mb-1 mt-4">{{$t('it-news-header5')}}</h5>
+                            <p><small class="text-muted"><i class="uil uil-user"></i> {{$t('it-person')}} | <i class="uil uil-calender"></i> {{$t('it-subdate')}}</small></p>
+                            <p class="mt-1">{{$t('it-news-prag5')}}</p>
                         </div>
                     </div>
                 </div>
@@ -134,35 +130,35 @@
     <section class="mt-5 mb-5 p-5" style="background: #203240d9">
         <div class="container">
             <div class="row">
-                <div class="col-6 mt-5">
-                    <h5 class="text-light text-uppercase">Keeping your work <span class="text-danger">Safe!</span></h5>
-                    <h1 class="text-light font-weight-bold text-uppercase">The Affordable Way<br> To Keep You Connected<br> To Life.</h1>
+                <div class="col-xs-12 col-lg-6 mt-5">
+                    <h5 class="text-light text-uppercase">{{$t('it-contact-header1')}} <span class="text-danger">{{$t('it-contact-header2')}}</span></h5>
+                    <h1 class="text-light font-weight-bold text-uppercase">{{$t('it-contact-header3')}}<br> {{$t('it-contact-header4')}}<br> {{$t('it-contact-header5')}}</h1>
                 </div>
-                <div class="col-6 rounded p-3" style="background:#fff">
-                    <h1 class="font-weight-bold m-3">GET IN <span class="text-success">TOUCH</span></h1>
+                <div class="col-xs-12 col-lg-6 rounded p-3" style="background:#fff">
+                    <h1 class="font-weight-bold m-3">{{$t('it-contact-header6')}} <span class="text-success">{{$t('it-contact-header7')}}</span></h1>
                     <form>
                         <div class="form-group mb-3">
-                            <label for="name">NAME</label>
+                            <label for="name">{{$t('name')}}</label>
                             <input type="text" class="form-control" id="name">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="phone">PHONE NUMBER</label>
+                            <label for="phone">{{$t('phone')}}</label>
                             <input type="text" class="form-control" id="phone">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="email">EMAIL</label>
+                            <label for="email">{{$t('mail')}}</label>
                             <input type="text" class="form-control" id="email">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="domain">Business Domain</label>
+                            <label for="domain">{{$t('it-contact-input1')}}</label>
                             <input type="text" class="form-control" id="domain">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="message">Your Explanation</label>
+                            <label for="message">{{$t('it-contact-input2')}}</label>
                             <textarea class="form-control" id="message" rows="10"></textarea>
                         </div>
                         <div class="text-center mt-3">
-                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" class="btn btn-success">{{$t('subm')}}</button>
                         </div>
                     </form>
                 </div>

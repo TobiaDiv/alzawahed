@@ -60,7 +60,7 @@
               href="#"
               @click.prevent="setLang(lang.slug)"
             >
-              <MDBIcon :flag="lang.flag" />{{ lang.name }}
+              <MDBIcon :flag="lang.flag" /> {{ lang.name }}
               <!-- <MDBIcon icon="check" class="text-success ms-2"></MDBIcon> -->
             </MDBDropdownItem>
           </MDBDropdownMenu>
@@ -103,7 +103,7 @@
     data() {
       return {
         langs: [
-          { name: "Arabic", slug: "ar", flag: "sa" },
+          { name: "العربية", slug: "ar", flag: "sa" },
           { name: "English", slug: "en", flag: "united-kingdom" },
         ],
       };
