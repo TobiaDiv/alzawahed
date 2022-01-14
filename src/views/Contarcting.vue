@@ -4,9 +4,9 @@
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white">
-                    <h1 class="mb-3">Development of top quality real estate object</h1>
-                    <h4 class="mb-3">Quality materials & professional technology</h4>
-                    <MDBBtn tag="a" lg outline="light" href="#!" role="button">Contact Us</MDBBtn>
+                    <h1 class="mb-3">{{$t('con-header-1')}}</h1>
+                    <h4 class="mb-3">{{$t('con-header-2')}}</h4>
+                    <MDBBtn tag="a" lg outline="light" href="#!" role="button">{{$t('contact')}}</MDBBtn>
                 </div>
             </div>
         </div>
@@ -18,70 +18,65 @@
                 <div class="col-xs-12 col-md-6">
                     <img src="@/assets/contracting-logo.jpg" class="img-fluid">
                 </div>
-                <div class="col-xs-12 col-md-6 text-center" style="margin-top: 130px;">
-                    <h2 class="text-center font-weight-bolder secur-title-color header">We are on Alzawahed contracting</h2>
+                <div class="col-xs-12 col-md-6 text-center" style="margin-top: 50px;">
+                    <h2 class="text-center font-weight-bolder secur-title-color header">{{$t('con-header-3')}}</h2>
                     <p class="subtitle">
-                        Al-Zawahed Contracting is one of the main pillars in the field and scope of construction 
-                        and reconstruction works, infrastructure and infrastructure works, and road works, because 
-                        of its executive capabilities, engineering and technical cadres, trained and skilled workers, 
-                        and qualified to implement engineering plans. Projects in the private sector, and this is due to the 
-                        administrative support and the methodological plans and development of the contracting sector in the 
-                        company, as it confirms its actual ability to provide its multiple services.
+                        {{$t('con-prag-1')}}
                     </p>
-                    <button class="btn btn-color">Read More</button>
+                    <button class="btn btn-color">{{$t('h-main-btn')}}</button>
                 </div>
             </div>
         </div>
     </div>
     <section class="container mt-5 mb-5">
-        <h1 class="text-center m-5 header">What we are provide<hr></h1>
+        <h1 class="text-center m-5 header">{{$t('con-header-4')}}<hr></h1>
         <div class="row">
-            <div class="col-6 mb-3">
+            <div class="col-xs-12 col-md-12 mb-3">
                 <MDBCard>
                     <MDBCardBody>
-                        <MDBCardTitle class="title"><i class="uil uil-building icon"></i>  | Construction and reconstruction</MDBCardTitle>
+                        <MDBCardTitle class="title"><i class="uil uil-building icon"></i>  | {{$t('con-card-title1')}}</MDBCardTitle>
                         <MDBCardText class="subtitle">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            {{$t('con-card-text')}}
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
             </div>
-            <div class="col-6 mb-3">
+            <div class="col-xs-12 col-md-6 mb-3">
                 <MDBCard>
                     <MDBCardBody>
-                        <MDBCardTitle class="title"><i class="uil uil-layers icon"></i>  | infrastructure</MDBCardTitle>
+                        <MDBCardTitle class="title"><i class="uil uil-layers icon"></i>  | {{$t('con-card-title2')}}</MDBCardTitle>
                         <MDBCardText class="subtitle">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            {{$t('con-card-text')}}
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
             </div>
-            <div class="col-6 mb-3">
+            <div class="col-xs-12 col-md-6 mb-3">
                 <MDBCard>
                     <MDBCardBody>
-                        <MDBCardTitle class="title"><i class="uil uil-wrench icon"></i>  | Maintenance and hygiene</MDBCardTitle>
+                        <MDBCardTitle class="title"><i class="uil uil-wrench icon"></i>  | {{$t('con-card-title3')}}</MDBCardTitle>
                         <MDBCardText class="subtitle">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            {{$t('con-card-text')}}
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
             </div>
-            <div class="col-6 mb-3">
+            <div class="col-xs-12 col-md-6 mb-3">
                 <MDBCard>
                     <MDBCardBody>
-                        <MDBCardTitle class="title"><i class="uil uil-lightbulb icon"></i>  | Designs and decoration</MDBCardTitle>
+                        <MDBCardTitle class="title"><i class="uil uil-lightbulb icon"></i>  | {{$t('con-card-title4')}}</MDBCardTitle>
                         <MDBCardText class="subtitle">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            {{$t('con-card-text')}}
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
             </div>
-            <div class="offset-3 col-6 mb-3">
+            <div class="col-xs-12 col-md-6 mb-3">
                 <MDBCard>
                     <MDBCardBody>
-                        <MDBCardTitle class="title"><i class="uil uil-desktop icon"></i>  | Agriculture</MDBCardTitle>
+                        <MDBCardTitle class="title"><i class="uil uil-desktop icon"></i>  | {{$t('con-card-title5')}}</MDBCardTitle>
                         <MDBCardText class="subtitle">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            {{$t('con-card-text')}}
                         </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
@@ -89,45 +84,45 @@
         </div>
     </section>
     <section class="container mt-5 mb-5">
-        <h1 class="text-center m-5 header">Galury<hr></h1>
+        <h1 class="text-center m-5 header">{{$t('h-header-photo2')}}<hr></h1>
         <div class="row">
-            <div class="col-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <img src="@/assets/contract/contract01.jpg" width="400px" alt="">
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <img src="@/assets/contract/contract02.jpg" width="400px" alt="">
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <img src="@/assets/contract/contract03.jpg" width="400px" alt="">
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <img src="@/assets/contract/contract04.jpg" width="400px" alt="">
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <img src="@/assets/contract/contract05.jpg" width="400px" alt="">
             </div>
-            <div class="col-4">
+            <div class="col-xs-12 col-md-6 col-lg-4">
                 <img src="@/assets/contract/contract06.jpg" width="400px" alt="">
             </div>
         </div>
     </section>
     <section class="container mt-5 mb-5">
-        <h1 class="text-center m-5 header">Cntact Us<hr></h1>
+        <h1 class="text-center m-5 header">{{$t('contact')}}<hr></h1>
         <div class="row">
-            <div class="col-4 bg">
+            <div class="col-xs-12 col-lg-4 bg">
                 <div class="m-5">
-                    <h1>Office location</h1>
-                    <p>Saudi Arabia -Riyadh-Alwaha-1st floor</p>
+                    <h1>{{$t('logi-mission-header1')}}</h1>
+                    <p>{{$t('logi-h1-prag')}}</p>
                 </div>
                 <div class="m-5">
-                    <h1>Office Hours</h1>
-                    <p><strong>Sunday to Thursday :</strong> 8:30 AM to 5:00 PM</p>
-                    <p><strong>Friday-Saturday:</strong> Closed</p>
+                    <h1>{{$t('logi-mission-header2')}}</h1>
+                    <p><strong>{{$t('logi-h2-prag1')}}</strong> {{$t('logi-h2-prag4')}}</p>
+                    <p><strong>{{$t('logi-h2-prag2')}}</strong> {{$t('logi-h2-prag3')}}</p>
                 </div>
                 <div class="m-5">
-                    <h1>Contact Info</h1>
-                    <p><strong>Phone:</strong> 920004251</p>
-                    <p><strong>Email:</strong>  info@alzawahed.com</p>
+                    <h1>{{$t('logi-mission-header3')}}</h1>
+                    <p><strong>{{$t('logi-h3-prag1')}}</strong> 920004251</p>
+                    <p><strong>{{$t('logi-h3-prag2')}}</strong>  info@alzawahed.com</p>
                 </div>
                 <div class="m-5">
                     <a href="" class="me-4 text-reset">
@@ -144,40 +139,40 @@
                     </a>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-xs-12 col-lg-8">
                 <dir>
-                    <h1 class="header m-2">What we are provide</h1>
-                    <p class="subtitle ms-3 mb-4">Send your Message and we will response soon</p>
+                    <h1 class="header m-2">{{$t('con-header-4')}}</h1>
+                    <p class="subtitle ms-3 mb-4">{{$t('con-send')}}</p>
                 </dir>
                 <form>
                 <div class="form-group">
-                  <label for="name">NAME</label>
+                  <label for="name">{{$t('name')}}</label>
                   <input type="text" class="form-control" id="name">
                 </div>
                 <div class="form-group">
-                  <label for="phone">PHONE NUMBER</label>
+                  <label for="phone">{{$t('phone')}}</label>
                   <input type="text" class="form-control" id="phone">
                 </div>
                 <div class="form-group">
-                  <label for="email">EMAIL</label>
+                  <label for="email">{{$t('mail')}}</label>
                   <input type="text" class="form-control" id="email">
                 </div>
                 <div class="form-group">
-                  <label class="mt-2 mb-2" for="checkbox">Service you Intersted with</label>
+                  <label class="mt-2 mb-2" for="checkbox">{{$t('radio')}}</label>
                   <div class="row">
-                    <div class="col-6 mb-2"><MDBCheckbox label="Construction and reconstruction" v-model="check1"/></div>
-                    <div class="col-6 mb-2"><MDBCheckbox label="Infrastructure and infrastructure" v-model="check2"/></div>
-                    <div class="col-6 mb-2"><MDBCheckbox label="Maintenance and hygiene" v-model="check3"/></div>
-                    <div class="col-6 mb-2"><MDBCheckbox label="Designs and decoration" v-model="check4"/></div>
-                    <div class="offset-3 col-6 mb-2"><MDBCheckbox label="Agriculture" v-model="check5"/></div>
+                    <div class="col-6 mb-2"><MDBCheckbox :label="select1" v-model="check1"/></div>
+                    <div class="col-6 mb-2"><MDBCheckbox :label="select2" v-model="check2"/></div>
+                    <div class="col-6 mb-2"><MDBCheckbox :label="select3" v-model="check3"/></div>
+                    <div class="col-6 mb-2"><MDBCheckbox :label="select4" v-model="check4"/></div>
+                    <div class="offset-3 col-6 mb-2"><MDBCheckbox :label="select5" v-model="check5"/></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="message">COMMENT OR MESSAGE</label>
+                  <label for="message">{{$t('comment')}}</label>
                   <textarea class="form-control" id="message" rows="10"></textarea>
                 </div>
                 <div class="text-center mt-3">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary">{{$t('subm')}}</button>
                 </div>
               </form>
             </div>
@@ -197,6 +192,23 @@ export default {
         MDBCardTitle,
         MDBCardText,
         MDBCheckbox
+    },
+    computed:{
+        select1(){
+            return this.$t('con-select1')
+        },
+        select2(){
+            return this.$t('con-select2')
+        },
+        select3(){
+            return this.$t('con-select3')
+        },
+        select4(){
+            return this.$t('con-select4')
+        },
+        select5(){
+            return this.$t('con-select5')
+        }
     },
     setup() {
         const check1 = ref(true);

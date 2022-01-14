@@ -166,5 +166,24 @@
   "it-contact-header6":"GET IN",
   "it-contact-header7":"TOUCH",
   "it-contact-input1":"Business Domain",
-  "it-contact-input2":"Your Explanation"
+  "it-contact-input2":"Your Explanation",
+  // contracting
+  "con-header-1":"Development of top quality real estate object",
+  "con-header-2":"Quality materials & professional technology",
+  "con-header-3":"We are on Alzawahed contracting",
+  "con-prag-1":"Al-Zawahed Contracting is one of the main pillars in the field and scope of construction and reconstruction works, infrastructure and infrastructure works, and road works, because of its executive capabilities, engineering and technical cadres, trained and skilled workers, and qualified to implement engineering plans. Projects in the private sector, and this is due to the administrative support and the methodological plans and development of the contracting sector in the company, as it confirms its actual ability to provide its multiple services.",
+  "con-header-4":"What we are provide",
+  "con-send":"Send your Message and we will response soon",
+  "con-card-title1":"Construction and reconstruction",
+  "con-card-title2":"infrastructure",
+  "con-card-title3":"Maintenance and hygiene",
+  "con-card-title4":"Designs and decoration",
+  "con-card-title5":"Agriculture",
+  "con-card-text":"Quality materials & professional technology",
+  "con-select1":"Construction and reconstruction",
+  "con-select2":"Infrastructure",
+  "con-select3":"Maintenance and hygiene",
+  "con-select4":"Designs and decoration",
+  "con-select5":"Agriculture"
+  
 }
