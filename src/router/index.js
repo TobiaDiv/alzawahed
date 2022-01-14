@@ -10,32 +10,36 @@ import Contarcting from '../views/Contarcting.vue'
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    redirect: 'home'
+  },
+  {
+    path: '/home',
+    name: 'home',
     component: Home
   },
   {
     path: '/security',
-    name: 'Security',
+    name: 'security',
     component: Security
   },
   {
     path: '/logistics',
-    name: 'Logistics',
+    name: 'logistics',
     component: Logistics
   },
   {
     path: '/it',
-    name: 'It',
+    name: 'it',
     component: It
   },
   {
     path: '/clearance',
-    name: 'Clearance',
+    name: 'clearance',
     component: Clearance
   },
   {
     path: '/contarcting',
-    name: 'Contarcting',
+    name: 'contarcting',
     component: Contarcting
   },
   {
