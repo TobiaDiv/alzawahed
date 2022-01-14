@@ -73,6 +73,10 @@
   "secure-contact2-header" : "Register with us now",
   "secure-contact1-parg" : "Choose Al-Zawahed now and secure full security guard: We provide the best security guard services, We have an integrated system of monitoring and control systems, We are happy to provide Best, We have an insurance system for the banking sector and money transfers,",
   "secure-contact2-parg" : "If you want to be one of our security guards, You have commitment and a decent appearance?, Is your physical strength intact?, Can you commit to professional training?, Can you pass the assessment?",
-  "secure-cantact-btn" : "DETAILS"
+  "secure-cantact-btn" : "DETAILS",
+
+
+  //test
+  "test": "Alzawahed Services & Security Guards"
   
 }

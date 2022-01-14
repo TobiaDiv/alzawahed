@@ -57,7 +57,7 @@
                 <div class="form-group">
                   <label class="mt-2 mb-2" for="checkbox">{{$t('radio')}}</label>
                   <div class="row">
-                    <div class="col-6 mb-2"><MDBCheckbox label="Alzawahed Services & Security Guards" v-model="checkbox1" /></div>
+                    <div class="col-6 mb-2"><MDBCheckbox :label="test" v-model="checkbox1" /></div>
                     <div class="col-6 mb-2"><MDBCheckbox label="Alzawahed IT Solution" v-model="checkbox2" /></div>
                     <div class="col-6 mb-2"><MDBCheckbox label="Alzawahed Freight & logistics" v-model="checkbox3" /></div>
                     <div class="col-6 mb-2"><MDBCheckbox label="Alzawahed Custom Clearance" v-model="checkbox4" /></div>
@@ -89,6 +89,11 @@
     name:"Contact",
     components: {
       MDBCheckbox
+    },
+    computed: {
+      test(){
+        return this.$t('test');
+      }
     },
     setup() {
       const checkbox1 = ref(true);
