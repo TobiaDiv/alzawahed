@@ -36,22 +36,20 @@
         </div>
     </section>
     <!-- Background image -->
-    <section class="all-logos">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <img src="@/assets/logistics-logo-final.png" class="img-fluid">
-                </div>
-                <div class="col-xs-12 col-md-6 text-center" style="margin-top: 100px;">
-                    <h2 class="text-center font-weight-bolder title-color mb-4">Alzawahed Freight & Logistics</h2>
-                    <p class="subtitle mb-4">
-                        Welcome to Alzawahed Freight & Logistics … one of the leading Freight & logistics company recognized 
-                        as reliable, safe and benchmark for high standards smart solutions in shipping, freight and Logistics 
-                        across the world, empowered by a highly trained and experienced professionals,  we constantly work towards 
-                        achieving customer delight!
-                    </p>
-                    <button class="btn btn-color ms-3"><i class="uil uil-columns"></i> GET YOUR QOUTE</button>
-                </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <img src="@/assets/logistics-logo-final.png" class="img-fluid">
+            </div>
+            <div class="col-xs-12 col-md-6 text-center" style="margin-top: 100px;">
+                <h2 class="text-center font-weight-bolder title-color mb-4">Alzawahed Freight & Logistics</h2>
+                <p class="subtitle mb-4">
+                    Welcome to Alzawahed Freight & Logistics … one of the leading Freight & logistics company recognized 
+                    as reliable, safe and benchmark for high standards smart solutions in shipping, freight and Logistics 
+                    across the world, empowered by a highly trained and experienced professionals,  we constantly work towards 
+                    achieving customer delight!
+                </p>
+                <button class="btn btn-color ms-3"><i class="uil uil-columns"></i> GET YOUR QOUTE</button>
             </div>
         </div>
     </section>
@@ -59,62 +57,62 @@
     <section class="mt-5 mb-5 p-5" style="background: #f5f5f5">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-xs-12 col-lg-3">
                     <div class="bg-secondary left-hand-path">
                         <h4 class="font-weight-bold text-center text-light mb-2">Get Benefits worth</h4>
                         <h1 class="font-weight-bold text-center text-light">$250</h1>
                         <button class="btn btn-color-alt text-light btn-center">GET A QOUTE <i class="uil uil-arrow-right"></i></button>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-xs-12 col-lg-9">
                     <h2 class="mb-3 font-weight-bold offer title-color-alt">We provide logistics services to virtually all key industry sectors including:</h2>
                     <h3 class="mb-3 font-weight-bold offer title-color-alt">--------------</h3>
                     <div class="row">
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-glass-martini-alt d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Automative</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-plane d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Chemicals</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-trees d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Consumer goods</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-dice-six d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Constructions</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-shield-check d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Defense & Government</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-pizza-slice d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Food industry</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-cog d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Industrial</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-screw d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Manufacturing</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-coins d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Oil & Gas</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-medkit d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Pharma & Life Science</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-bill d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Retail</h5>
                         </div>
-                        <div class="col-4 mb-5">
+                        <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
                             <i class="uil uil-atom d-inline fs-1 title-color-alt"></i>
                             <h5 class="d-inline ms-1">Technology</h5>
                         </div>
@@ -149,7 +147,7 @@
     <section class="container mt-5 mb-5">
         <h1 class="text-center m-5 header">OUR MISSION<hr></h1>
         <div class="row">
-            <div class="col-4 bg">
+            <div class="col-xs-12 col-md-4 bg">
                 <div class="m-5">
                     <h1>Office location</h1>
                     <p>Saudi Arabia -Riyadh-Alwaha-1st floor</p>
@@ -179,7 +177,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-xs-12 col-md-8">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between align-items-center mb-4">
                         To offer “ONE STOP SERVICES” for all your Logistics requirements and International cargo movement.
@@ -240,7 +238,7 @@
     <!-- contact -->
     <section class="container-overlay padd mb-5">
         <div class="row" style="z-index: 1;">
-            <div class="col-6">
+            <div class="col-xs-12 col-lg-6">
                 <h1 class="text-light font-weight-bolder mt-3 mb-4">Opening Hours</h1>
                 <div class="d-flex justify-content-between mb-5">
                     <h4 class="text-light">Sunday- Thursday</h4>
@@ -251,7 +249,7 @@
                     <h4 class="text-light">Close</h4>
                 </div><hr class="text-light">
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-lg-6">
                 <form class="row p-3" style="background:#fff">
                 <h1 class="title-color mb-5">Pick up your needs NOW!</h1>
                     <div class="col-6 form-group mb-3">
@@ -325,6 +323,9 @@ export default {
 .z-ind{
     z-index: -1;
 }
+.img-fluid{
+    width: 100%;
+}
 .my-card-container{
     margin-top: -30px;
     box-shadow: 0 0 30px 3px rgba(0,0,0,.125);
@@ -334,6 +335,11 @@ export default {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
+}
+@media screen and (max-width: 768px){
+    .my-card{
+        display: none;
+    }
 }
 .left-hand-path{
     padding: 150px 48px 48px 48px;
@@ -350,6 +356,11 @@ export default {
 }
 .padd{
     padding: 150px;
+}
+@media screen and (max-width: 600px) {
+    .padd{
+        padding: 50px;
+    }
 }
 .container-overlay{
     background-image: url('../assets/logistics/architecture.jpg');

@@ -82,7 +82,7 @@
         <div class="row">
             <!--========== SERVICES 1 ==========-->
             <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
-                <div class="align-self-stretch">
+                <div class="">
                     <i class="uil uil-desktop services__icon"></i>
                     <h3 class="services__title">{{$t('it')}}</h3>
                     <p>{{$t('h-prag1-serv')}}</p>
@@ -260,7 +260,7 @@ export default {
     padding: 3rem 0;
 }
 .all-logos .row img {
-    width: 450px;
+    width: 100%;
 }
 .btn-color{
     background-color: var(--first-color);
@@ -306,8 +306,8 @@ export default {
     position: absolute;
     width: 68px;
     height: 68px;
-    top: -35px;
-    left: 15px;
+    top: -30px;
+    left: -8px;
     border-radius: 50%;
     background: inherit;
     opacity: .1
@@ -335,11 +335,9 @@ p,
 .con{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 40px 200px 0 200px;
-    margin-bottom: 100px;
+    margin: 40px auto;
 }
 
 .con .heading{
@@ -390,19 +388,22 @@ p,
     width: 100%;
     }
     .con .heading h3{
-    font-size: 1em;
-
+    font-size: 1rem;
+    width: 100%;
     }
 }
 /*==================== SERVICES ====================*/
 .container-services{
     background: var(--switch-section);
-    margin-bottom: 100px;
 }
 .services__content{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--container-color);
-    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    padding: 1.5rem .3rem;
+    height: auto;
     border-radius: .25rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     transition: .3s;
@@ -414,7 +415,7 @@ p,
 
 .services__icon{
     display: block;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: var(--first-color);
     margin-bottom: 1rem;
 }

@@ -3,20 +3,16 @@
     <!--==================== main background ====================-->
     <div class="switch-color mb-5">
     <div class="container all-logos">
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <img src="@/assets/security.jpg" class="img-fluid">
+        <div class="row p-5">
+            <div class="col-xs-12 col-lg-5">
+                <img src="@/assets/security.png" class="img-fluid">
             </div>
-            <div class="col-xs-12 col-md-6 text-center" style="margin-top: 130px;">
-                <h2 class="text-center font-weight-bolder secur-title-color">Alzawahed for Services and Security Guards</h2>
+            <div class="col-xs-12 col-lg-7 text-center">
+                <h2 class="text-center font-weight-bolder secur-title-color">{{$t('secure-header')}}</h2>
                 <p class="text-color">
-                    Al-Zawahid Institution for Guarding and Security Services has been designed to meet the human instinctive need for security, 
-                    protection and safety. Guard and security services are among its goals to protect facilities in a safe, fortified and risk-free 
-                    environment. The necessary training for individuals on the methods of security, protection and safety according to programs 
-                    specially prepared for that activity to preserve the properties of the establishments and to work with international standards 
-                    in occupational safety to provide a comfortable atmosphere for work.
+                    {{$t('secure-prag')}}
                 </p>
-                <button class="btn btn-color">Read More</button>
+                <button class="btn btn-color">{{$t('h-main-btn')}}</button>
             </div>
         </div>
     </div>
@@ -24,23 +20,24 @@
     <!--==================== why us ====================-->
     <section class="container mb-5">
         <div class="row">
-            <div class="col-lg-6 col-sm-12 mb-4">
+            <div class="col-md-6 col-sm-12 mb-4">
                 <div class="card border-0 shadow rounded-xs pt-5">
                     <div class="card-body"> <i class="uil uil-eye icon-lg icon-color icon-bg-color icon-bg-circle mb-3"></i>
-                        <h4 class="mt-4 mb-3 fon">Our vision</h4>
-                        <p>We strive in Al Zawahid for Security Guards to achieve security and safety through the plans that are put in 
-                            place to provide security and safety Plans that suit schools and hospitals and the transfer of money</p>
+                        <h4 class="mt-4 mb-3 fon">{{$t('vision-header')}}</h4>
+                        <p>{{$t('secure-card-1-parg')}}
+                            <br>
+                            <br>
+                            <br>
+                            .
+                            </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 mb-4">
+            <div class="col-md-6 col-sm-12 mb-4">
                 <div class="card border-0 shadow rounded-xs pt-5">
                     <div class="card-body"> <i class="uil uil-constructor icon-lg icon-color icon-bg-color icon-bg-circle mb-3"></i>
-                        <h4 class="mt-4 mb-3 fon">Our mission</h4>
-                        <p>In our security guards, we always strive to protect the human element, develop security plans and strategies, 
-                            periodic field supervision, provide means of transport and communication that enhance the protection and 
-                            security process, the ability to effectively and directly manage crises throughout a continuous 24-hour period 
-                            and finally provide money transfer services</p>
+                        <h4 class="mt-4 mb-3 fon">{{$t('mission-header')}}</h4>
+                        <p>{{$t('secure-card-2-parg')}}</p>
                     </div>
                 </div>
             </div>
@@ -49,54 +46,54 @@
     <!--==================== sevices ====================-->
     <div class="switch-color">
     <section class="container mb-5">
-        <h1 class="text-center section-title">Our Services</h1>
+        <h1 class="text-center section-title">{{$t('services')}}</h1>
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-user-md text-center icon"></i>
-                <h3 class="text-center">Security and guarding</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-1')}}</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-cog text-center icon"></i>
-                <h3 class="text-center">Control system</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-2')}}</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-building text-center icon"></i>
-                <h3 class="text-center">Securing facilities</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-3')}}</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-window text-center icon"></i>
-                <h3 class="text-center">Security doors</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-4')}}</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-users-alt text-center icon"></i>
-                <h3 class="text-center">Personal escort</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-5')}}</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-money-insert text-center icon"></i>
-                <h3 class="text-center">Securing the banking sector</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-6')}}</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-user-circle text-center icon"></i>
-                <h3 class="text-center">Secure events</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-7')}}</h3>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="row col-auto m-5">
                 <i class="uil uil-bill text-center icon"></i>
-                <h3 class="text-center">Secure the transfer of funds</h3>
+                <h3 class="text-center">{{$t('secure-serve-icon-8')}}</h3>
                 </div>
             </div>
         </div>
@@ -105,33 +102,26 @@
     <!--==================== contact for ====================-->
     <section class="container mb-5 text-center">
         <MDBRow>
-            <MDBCol sm="6">
+            <MDBCol xs="12" md="6">
             <MDBCard>
                 <MDBCardBody>
-                <MDBCardTitle>Request a security guard service</MDBCardTitle>
+                <MDBCardTitle>{{$t('secure-contact1-header')}}</MDBCardTitle>
                 <MDBCardText>
-                    Choose Al-Zawahed now and secure full security guard
-                        <li>We provide the best security guard services</li>
-                        <li>We have an integrated system of monitoring and control systems</li>
-                        <li>We Al-Zawahid are happy to provide events and events</li>
-                        <li>We Al-Zawahid have an insurance system for the banking sector and money transfers</li>
+                    {{$t('secure-contact1-parg')}}
                 </MDBCardText>
-                <MDBBtn tag="a" href="#!" color="primary" aria-controls="contact1Label" @click="contact1 = true">Details</MDBBtn>
+                <MDBBtn tag="a" href="#!" color="primary" aria-controls="contact1Label" @click="contact1 = true">{{$t('secure-cantact-btn')}}</MDBBtn>
                 </MDBCardBody>
             </MDBCard>
             </MDBCol>
-            <MDBCol sm="6">
+            <MDBCol xs="12" md="6">
             <MDBCard>
                 <MDBCardBody>
-                <MDBCardTitle>Register with us now</MDBCardTitle>
+                <MDBCardTitle>{{$t('secure-contact2-header')}}</MDBCardTitle>
                 <MDBCardText>
-                    If you want to be one of our security guards, register your information
-                        <li>You have commitment and a decent appearance?</li>
-                        <li>Is your physical strength intact?</li>
-                        <li>Can you commit to professional training?</li>
-                        <li>Can you pass the assessment?</li>
+                    {{$t('secure-contact2-parg')}}
+                    <br>.
                 </MDBCardText>
-                <MDBBtn tag="a" href="#!" color="primary" aria-controls="contact2Label" @click="contact2 = true">Details</MDBBtn>
+                <MDBBtn tag="a" href="#!" color="primary" aria-controls="contact2Label" @click="contact2 = true">{{$t('secure-cantact-btn')}}</MDBBtn>
                 </MDBCardBody>
             </MDBCard>
             </MDBCol>
@@ -216,22 +206,15 @@ setup() {
     const items = [
     {
         src: "/img/security-bg1.jpg",
-        alt: "alzawahed security",
-        label: "First slide label",
-        caption: "Nulla vitae elit libero, a pharetra augue mollis interdum."
+        alt: "alzawahed security"
     },
     {
         src: "/img/security-bg2.jpg",
-        alt: "alzawahed security",
-        label: "Second slide label",
-        caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        alt: "alzawahed security"
     },
     {
         src: "/img/security-bg3.jpg",
-        alt: "alzawahed security",
-        label: "Third slide label",
-        caption:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+        alt: "alzawahed security"
     }
     ];
     const carousel = ref(0);
@@ -271,6 +254,9 @@ setup() {
 .subscription-wrapper {
     box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1) !important;
 }
+.shadow{
+    text-align: center;
+}
 .icon-bg-circle {
     position: relative;
 }
@@ -286,8 +272,8 @@ setup() {
     position: absolute;
     width: 68px;
     height: 68px;
-    top: -35px;
-    left: 15px;
+    top: -30px;
+    left: -8px;
     border-radius: 50%;
     background: inherit;
     opacity: .1
