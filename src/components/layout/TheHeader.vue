@@ -3,7 +3,7 @@
     <MDBNavbarBrand href="#">
       <img
         src="../../assets/logo.png"
-        height="85"
+        height="75"
         alt="alzawahed Logo"
         loading="lazy"
       />
@@ -14,7 +14,7 @@
     ></MDBNavbarToggler>
     <MDBCollapse v-model="collapse1" id="navbarrightContent">
       <MDBNavbarNav right class="mb-2 mb-lg-0">
-        <MDBNavbarItem class="fw text-center" to="/" active>{{$t('home')}}</MDBNavbarItem>
+        <MDBNavbarItem class="fw text-center" to="/home" active>{{$t('home')}}</MDBNavbarItem>
         <MDBNavbarItem class="fw text-center">
           <MDBDropdown class="nav-item" v-model="dropdown1">
             <MDBDropdownToggle

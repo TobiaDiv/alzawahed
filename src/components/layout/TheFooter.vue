@@ -48,19 +48,19 @@
         <!-- Links -->
         <h6 class="text-uppercase fw-bold mb-4">{{$t('services')}}</h6>
         <p>
-            <a href="#!" class="text-reset">{{$t('security')}}</a>
+            <a to="/security" class="text-reset">{{$t('security')}}</a>
         </p>
         <p>
-            <a href="#!" class="text-reset">{{$t('logistics')}}</a>
+            <a to="/logistics" class="text-reset">{{$t('logistics')}}</a>
         </p>
         <p>
-            <a href="#!" class="text-reset">{{$t('it')}}</a>
+            <a to="/it" class="text-reset">{{$t('it')}}</a>
         </p>
         <p>
-            <a href="#!" class="text-reset">{{$t('clearance')}}</a>
+            <a to="/clearance" class="text-reset">{{$t('clearance')}}</a>
         </p>
         <p>
-            <a href="#!" class="text-reset">{{$t('contarcting')}}</a>
+            <a to="/contarcting" class="text-reset">{{$t('contarcting')}}</a>
         </p>
         </MDBCol>
         <!-- Grid column -->
