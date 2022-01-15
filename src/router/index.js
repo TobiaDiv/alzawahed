@@ -10,7 +10,7 @@ import Contarcting from '../views/Contarcting.vue'
 const routes = [
   {
     path: '/',
-    redirect: 'home'
+    redirect: '/home'
   },
   {
     path: '/home',
