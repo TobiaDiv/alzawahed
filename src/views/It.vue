@@ -140,26 +140,26 @@
                 </div>
                 <div class="col-6 rounded p-3" style="background:#fff">
                     <h1 class="font-weight-bold m-3">GET IN <span class="text-success">TOUCH</span></h1>
-                    <form>
+                    <form ref="form" @submit.prevent="sendIt">
                         <div class="form-group mb-3">
-                            <label for="name">NAME</label>
-                            <input type="text" class="form-control" id="name">
+                            <label>NAME</label>
+                            <input v-model="name" type="text" class="form-control" id="name">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="text" class="form-control" id="phone">
+                            <label>PHONE NUMBER</label>
+                            <input type="text" v-model="phone" class="form-control" id="phone">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="email">EMAIL</label>
-                            <input type="text" class="form-control" id="email">
+                            <label>EMAIL</label>
+                            <input type="email" v-model="email" class="form-control" id="email">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="domain">Business Domain</label>
-                            <input type="text" class="form-control" id="domain">
+                            <label>Business Domain</label>
+                            <input type="text" v-model="domain" class="form-control" id="domain">
                         </div>
                         <div class="form-group mb-3">
                             <label for="message">Your Explanation</label>
-                            <textarea class="form-control" id="message" rows="10"></textarea>
+                            <textarea class="form-control" v-model="explanation" id="message" rows="10"></textarea>
                         </div>
                         <div class="text-center mt-3">
                             <button type="submit" class="btn btn-success">Submit</button>
@@ -173,11 +173,37 @@
 
 <script>
 import { MDBBtn } from 'mdb-vue-ui-kit';
+import axios from 'axios'
 export default {
     name:"It",
+    data(){
+        return{
+        name: '',
+        phone: '',
+        email: '',
+        domain: '',
+        explanation: '',
+        }
+    },
     components:{
         MDBBtn,
     },
+    methods: {
+        async sendIt() {
+            const data = {
+                name: this.name,
+                phone: this.phone,
+                email: this.email,
+                domain: this.domain,
+                explanation: this.explanation,
+            }
+            const response = await axios.post("http://localhost:3000/it", data)
+            console.log(response)
+            if (response.status == 200) {
+                alert("Success, Thanks")
+            }
+        }
+    }
 }
 </script>
 

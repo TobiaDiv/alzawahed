@@ -252,37 +252,37 @@
                 </div><hr class="text-light">
             </div>
             <div class="col-6">
-                <form class="row p-3" style="background:#fff">
+                <form class="row p-3" style="background:#fff" @submit.prevent="sendLogistic">
                 <h1 class="title-color mb-5">Pick up your needs NOW!</h1>
                     <div class="col-6 form-group mb-3">
                         <label class="text-dark" for="name">NAME</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" v-model="name" class="form-control" id="name">
                     </div>
                     <div class="col-6 form-group mb-3">
                         <label class="text-dark" for="phone">PHONE NUMBER</label>
-                        <input type="number" class="form-control" id="phone">
+                        <input type="text" v-model="phone" class="form-control" id="phone">
                     </div>
                     <div class="col-12 form-group mb-3">
                         <label class="text-dark" for="mail">EMAIL</label>
-                        <input type="email" class="form-control" id="mail">
+                        <input type="email" v-model="email" class="form-control" id="mail">
                     </div>
                     <div class="col-12 form-group mb-3">
                         <label class="text-dark text-uppercase" for="mail">Choose your service request</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" v-model="selected">
                             <option selected>Open this select menu</option>
-                            <option value="1">Airfreight.</option>
-                            <option value="2">Sea Freight.</option>
-                            <option value="3">Door to Door.</option>
-                            <option value="4">Land transport.</option>
-                            <option value="5">Customs Clearance/Door Delivery</option>
-                            <option value="6">Warehousing</option>
-                            <option value="7">Bonded Warehousing Facility</option>
-                            <option value="8">Routing-Cross Trade</option>
-                            <option value="9">Hazardous Cargo Handling</option>
-                            <option value="10">Project cargo handling.</option>
-                            <option value="11">Saber registration for regulated and non-regulated products with PCOC and SCOC certificates.</option>
-                            <option value="12">Distribution service of transports.</option>
-                            <option value="13">Sale of Used Reefer/Dry Containers for storage purpose.</option>
+                            <option value="Airfreight">Airfreight.</option>
+                            <option value="Sea Freight">Sea Freight.</option>
+                            <option value="Door to Door">Door to Door.</option>
+                            <option value="Land transport">Land transport.</option>
+                            <option value="Customs Clearance/Door Delivery">Customs Clearance/Door Delivery</option>
+                            <option value="Warehousing">Warehousing</option>
+                            <option value="Bonded Warehousing Facility">Bonded Warehousing Facility</option>
+                            <option value="Routing-Cross Trade">Routing-Cross Trade</option>
+                            <option value="Hazardous Cargo Handling">Hazardous Cargo Handling</option>
+                            <option value="Project cargo handling">Project cargo handling.</option>
+                            <option value="Saber registration for regulated and non-regulated products with PCOC and SCOC certificates">Saber registration for regulated and non-regulated products with PCOC and SCOC certificates.</option>
+                            <option value="Distribution service of transports">Distribution service of transports.</option>
+                            <option value="Sale of Used Reefer/Dry Containers for storage purpose">Sale of Used Reefer/Dry Containers for storage purpose.</option>
                         </select>
                     </div>
                     <button class="btn btn-color-alt rounded-pill">SUBMIT</button>
@@ -294,8 +294,32 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
     name:"Logistics",
+    data(){
+        return {
+            name: '',
+            phone: '',
+            email: '',
+            selected: 'Open this select menu'
+        }
+    },
+    methods: {
+        async sendLogistic() {
+            const data = {
+                name: this.name,
+                phone: this.phone,
+                email: this.email,
+                service: this.selected
+            }
+            const response = await axios.post("https://thawing-savannah-66649.herokuapp.com/logistic", data)
+            console.log(response);
+            if (response.status == 200) {
+                alert("Success, Thanks")
+            }
+        }
+    }
 }
 </script>
 
