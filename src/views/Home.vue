@@ -1,12 +1,12 @@
 <template>
 <div class="home">
     <!--==================== main background ====================-->
-    <div class="container all-logos">
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
+    <div class="container all-logos mb-5" style="margin-top: 7rem">
+        <div class="row d-flex align-items-center">
+            <div class="col-xs-12 col-md-6" data-aos="fade-left">
                 <img src="@/assets/home/all-logos.png" class="img-fluid">
             </div>
-            <div class="col-xs-12 col-md-6 text-center" style="margin-top: 38px;">
+            <div class="col-xs-12 col-md-6 text-center" data-aos="fade-right">
                 <h2 class="text-center font-weight-bolder title-color">{{$t('h-header-1')}}</h2>
                 <p class="text-color">{{$t('h-prag-1')}}</p>
                 <button class="btn btn-color">{{$t('h-main-btn')}}</button>
@@ -15,7 +15,7 @@
     </div>
     <!--==================== Why us ====================-->
     <section class="qoute">
-    <div class="container">
+    <div class="container" data-aos="fade" data-aos-duration="1500">
         <q>{{$t('h-qoute-1')}}</q>
         <span>{{$t('h-header-1')}}</span>
         <div class="row mt-4">
@@ -50,21 +50,21 @@
         <div class="timeline-container">
             <div class="timeline">
                 <ul>
-                <li>
+                <li data-aos="zoom-in" data-aos-duration="1000">
                     <div class="timeline-content">
                     <h3 class="date">{{$t('h-qual1-date')}}</h3>
                     <h1>{{$t('h-qual1-haad')}}</h1>
                     <p>{{$t('h-qual1-prag')}}</p>
                     </div>
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-duration="1000">
                     <div class="timeline-content">
                     <h3 class="date">{{$t('h-qual2-date')}}</h3>
                     <h1>{{$t('h-qual2-haad')}}</h1>
                     <p>{{$t('h-qual2-prag')}}</p>
                     </div>
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-duration="1000">
                     <div class="timeline-content">
                     <h3 class="date">{{$t('h-qual3-date')}}</h3>
                     <h1>{{$t('h-qual3-haad')}}</h1>
@@ -81,7 +81,7 @@
         <h6 class="text-center">{{$t('h-subtitle-serv')}}</h6>
         <div class="row">
             <!--========== SERVICES 1 ==========-->
-            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
+            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
                 <div class="">
                     <i class="uil uil-desktop services__icon"></i>
                     <h3 class="services__title">{{$t('it')}}</h3>
@@ -108,7 +108,7 @@
                 </div>
             
             <!--========== SERVICES 2 ==========-->
-            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
+            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3" data-aos="fade-down" data-aos-duration="1000">
                 <div>
                     <i class="uil uil-user services__icon"></i>
                     <h3 class="services__title">{{$t('security')}}</h3>
@@ -135,7 +135,7 @@
                 </div>
             
             <!--========== SERVICES 3 ==========-->
-            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
+            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                     <i class="uil uil-truck services__icon"></i>
                     <h3 class="services__title">{{$t('logistics')}}</h3>
@@ -161,7 +161,7 @@
                 </div>
             
             <!--========== SERVICES 4 ==========-->
-            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
+            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3" data-aos="fade-down" data-aos-duration="1000">
                 <div>
                     <i class="uil uil-bag services__icon"></i>
                     <h3 class="services__title">{{$t('clearance')}}</h3>
@@ -187,7 +187,7 @@
                 </div>
             
             <!--========== SERVICES 5 ==========-->
-            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3">
+            <div class="services__content col-lg-2 ms-3 me-3 col-sm-12 mb-3" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                     <i class="uil uil-megaphone services__icon"></i>
                     <h3 class="services__title">{{$t('contarcting')}}</h3>
@@ -223,20 +223,20 @@
             </div>
             <div class="box">
                 <div class="dream">
-                    <img src="@/assets/home/bg1.jpg">
-                    <img src="@/assets/home/bg2.jpg">
-                    <img src="@/assets/home/bg6.jpeg">
+                    <img src="@/assets/home/bg1.jpg" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="@/assets/home/bg2.jpg" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="@/assets/home/bg6.jpeg" data-aos="fade-up" data-aos-duration="1000">
                     
                 </div>
                 <div class="dream">
-                    <img src="@/assets/home/Scan-1.jpg">
-                    <img src="@/assets/home/bg3.jpg">
-                    <img src="@/assets/home/bg4.png">
+                    <img src="@/assets/home/Scan-1.jpg" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="@/assets/home/bg3.jpg" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="@/assets/home/bg4.png" data-aos="fade-up" data-aos-duration="1000">
                 </div>
                 <div class="dream">
-                    <img src="@/assets/home/bg5.jpg">
-                    <img src="@/assets/home/Scan-2.jpg">
-                    <img src="@/assets/home/bg7.jpeg">
+                    <img src="@/assets/home/bg5.jpg" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="@/assets/home/Scan-2.jpg" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="@/assets/home/bg7.jpeg" data-aos="fade-up" data-aos-duration="1000">
                 </div>
             </div>
         </div>

@@ -201,5 +201,13 @@
   "clear-contact-input4":"Quantity",
   "clear-contact-input5":"Weight",
   "clear-contact-input6":"Width",
-  "clear-contact-input7":"Height"
+  "clear-contact-input7":"Height",
+  "secur-serv1":"personal guard",
+  "secur-serv2":"Occasions",
+  "secur-serv3":"comp",
+  "secur-serv4":"Factories",
+  "secur-serv5":"Institutions",
+  "secur-serv6":"Morning time",
+  "secur-serv7":"Evening period",
+  "secur-serv8":"night period"
 }

@@ -6,8 +6,13 @@
 <script>
   import TheHeader from "@/components/layout/TheHeader.vue";
   import TheFooter from "@/components/layout/TheFooter.vue";
+  import AOS from 'aos'
+  import "aos/dist/aos.css"
   export default {
     name: "App",
+    created(){
+      AOS.init();
+    },
     components: {
       TheHeader,
       TheFooter
@@ -31,6 +36,7 @@
 </script>
 <style>
   @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;700&family=Lobster&family=Rubik&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
   :root {
     /*========== Colors ==========*/
     /* Change favorite color */
@@ -78,7 +84,12 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'El Messiri', sans-serif;
+  }
+  html.ar *{
+    font-family: 'El Messiri', sans-serif;
+  }
+  html.en *{
+    font-family: 'Poppins', sans-serif;
   }
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

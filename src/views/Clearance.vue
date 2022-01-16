@@ -14,7 +14,7 @@
     </div>
     <!-- icons -->
     <section class="container mt-5 mb-5">
-        <div class="row">
+        <div class="row" data-aos="fade" data-aos-duration="1000">
             <div class="col-xs-12 col-md-4 mb-2">
                 <div class="card rounded-pill">
                     <i class="uil uil-lightbulb d-inline fs-1 text-color text-center"></i>
@@ -38,7 +38,7 @@
     <!-- Background image -->
     <section class="all-logos">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex align-content-center" data-aos="fade-down" data-aos-duration="1000">
                 <div class="col-xs-12 col-md-6" style="margin-top: 70px;">
                     <div class="row">
                         <img src="@/assets/clearance-logo1.png" class="img-fluid">
@@ -75,26 +75,26 @@
         <h1 class="title text-center text-color">{{$t('clear-feature-header1')}}</h1>
         <p class="subtitle text-center">{{$t('clear-feature-prag')}}</p>
         <div class="container mt-5">
-            <div class="row">
+            <div class="row d-flex align-content-center">
                 <div class="col-xs-12 col-lg-4">
-                    <div class="card feature mb-5">
+                    <div class="card feature mb-5" data-aos="fade-down" data-aos-duration="1000">
                         <i class="uil uil-file-check-alt fs-1 text-center"></i>
                         <h3 class="text-center"> {{$t('clear-feature-header2')}}</h3>
                     </div>
-                    <div class="card feature mb-5">
+                    <div class="card feature mb-5" data-aos="fade-up" data-aos-duration="1000">
                         <i class="uil uil-arrow fs-1 text-center"></i>
                         <h3 class="text-center"> {{$t('clear-feature-header3')}}</h3>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-4">
+                <div class="col-xs-12 col-lg-4" data-aos="fade" data-aos-duration="1000">
                     <img src="@/assets/clearance/clearance-caru.jpg" style="width:100%">
                 </div>
                 <div class="col-xs-12 col-lg-4">
-                    <div class="card feature mb-5">
+                    <div class="card feature mb-5" data-aos="fade-down" data-aos-duration="1000">
                         <i class="uil uil-mobile-android fs-1 text-center"></i>
                         <h3 class="text-center"> {{$t('clear-feature-header4')}}</h3>
                     </div>
-                    <div class="card feature mb-5">
+                    <div class="card feature mb-5" data-aos="fade-up" data-aos-duration="1000">
                         <i class="uil uil-thumbs-up fs-1 text-center"></i>
                         <h3 class="text-center"> {{$t('clear-feature-header5')}}</h3>
                     </div>
@@ -105,21 +105,21 @@
     <!-- overlay -->
     <section class="container-overlay mb-5">
         <div class="row resp d-flex align-items-centers" style="z-index: 1;transform:rotate(2deg)">
-            <div class="col-xs-12 col-lg-4">
+            <div class="col-xs-12 col-lg-4" data-aos="fade-down" data-aos-duration="1000">
                 <div class="btn-outline-light text-center rounded m-3">
                     <i class="uil uil-user fs-1"></i>
                 </div>
                 <h3 style="display:inline" class="text-light">378</h3>
                 <p style="display:inline" class="text-light">{{$t('subscriber')}}</p>
             </div>
-            <div class="col-xs-12 col-lg-4">
+            <div class="col-xs-12 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
                 <div class="btn-outline-light text-center rounded m-3">
                     <i class="uil uil-trophy fs-1"></i>
                 </div>
                 <h3 style="display:inline" class="text-light">820</h3>
                 <p style="display:inline" class="text-light">{{$t('win')}}</p>
             </div>
-            <div class="col-xs-12 col-lg-4">
+            <div class="col-xs-12 col-lg-4" data-aos="fade-down" data-aos-duration="1000">
                 <div class="btn-outline-light text-center rounded m-3">
                     <i class="uil uil-suitcase fs-1"></i>
                 </div>
@@ -132,50 +132,50 @@
         </div>
     </section>
     <!-- contact -->
-    <h1 class="text-center text-color mart mb-5">{{$t('clear-contact-header1')}}</h1>
+    <h1 class="text-center text-color mart marb">{{$t('clear-contact-header1')}}</h1>
     <section class="mb-5" style="background:#cd9933">
-        <div class="container">
+        <div class="container" data-aos="fade" data-aos-duration="1000">
             <h1 class="font-weight-bold m-3 p-5 text-light">{{$t('clear-contact-header2')}}</h1>
-            <form class="row">
+            <form class="row" @submit.prevent="sendClearance">
                 <div class="col-6 form-group mb-3">
                     <label class="text-light" for="name">{{$t('name')}}</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" class="form-control" id="name" v-model="name">
                 </div>
                 <div class="col-6 form-group mb-3">
                     <label class="text-light" for="phone">{{$t('phone')}}</label>
-                    <input type="text" class="form-control" id="phone">
+                    <input type="text" class="form-control" id="phone" v-model="phone">
                 </div>
                 <div class="col-6 form-group mb-3">
                     <label class="text-light" for="email">{{$t('mail')}}</label>
-                    <input type="text" class="form-control" id="email">
+                    <input type="text" class="form-control" id="email" v-model="email">
                 </div>
                 <div class="col-6 form-group mb-3">
                     <label class="text-light" for="shipment">{{$t('clear-contact-input1')}}</label>
-                    <input type="text" class="form-control" id="shipment">
+                    <input type="text" class="form-control" id="shipment" v-model="ship">
                 </div>
                 <div class="col-6 form-group mb-3">
                     <label class="text-light" for="country">{{$t('clear-contact-input2')}}</label>
-                    <input type="text" class="form-control" id="country">
+                    <input type="text" class="form-control" id="country" v-model="country">
                 </div>
                 <div class="col-6 form-group mb-3">
-                    <label class="text-light" for="phone">{{$t('clear-contact-input3')}}</label>
-                    <input type="text" class="form-control" id="phone">
+                    <label class="text-light" for="distance">{{$t('clear-contact-input3')}}</label>
+                    <input type="text" class="form-control" id="distance" v-model="distance">
                 </div>
                 <div class="col-6 form-group mb-3">
-                    <label class="text-light" for="phone">{{$t('clear-contact-input4')}}</label>
-                    <input type="text" class="form-control" id="phone">
+                    <label class="text-light" for="qty">{{$t('clear-contact-input4')}}</label>
+                    <input type="text" class="form-control" id="qty" v-model="qty">
                 </div>
                 <div class="col-6 form-group mb-3">
-                    <label class="text-light" for="phone">{{$t('clear-contact-input5')}}</label>
-                    <input type="text" class="form-control" id="phone">
+                    <label class="text-light" for="weight">{{$t('clear-contact-input5')}}</label>
+                    <input type="text" class="form-control" id="weight" v-model="weight">
                 </div>
                 <div class="col-6 form-group mb-3">
-                    <label class="text-light" for="phone">{{$t('clear-contact-input6')}}</label>
-                    <input type="text" class="form-control" id="phone">
+                    <label class="text-light" for="width">{{$t('clear-contact-input6')}}</label>
+                    <input type="text" class="form-control" id="width" v-model="width">
                 </div>
                 <div class="col-6 form-group mb-3">
-                    <label class="text-light" for="phone">{{$t('clear-contact-input7')}}</label>
-                    <input type="text" class="form-control" id="phone">
+                    <label class="text-light" for="height">{{$t('clear-contact-input7')}}</label>
+                    <input type="text" class="form-control" id="height" v-model="height">
                 </div>
                 <div class="text-center mb-5 mt-3">
                     <button type="submit" class="btn btn-light">{{$t('subm')}}</button>
@@ -186,9 +186,45 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
-    name:"Clearance",
-}
+    name: "Clearance",
+    data() {
+    return {
+        name: "",
+        phone: "",
+        email: "",
+        ship: "",
+        country: "",
+        distance: "",
+        qty: "",
+        weight: "",
+        width: "",
+        height: "",
+    };
+},
+methods: {
+    async sendClearance() {
+    const data = {
+        name: this.name,
+        phone: this.phone,
+        email: this.email,
+        ship: this.ship,
+        country: this.country,
+        distance: this.distance,
+        qty: this.qty,
+        weight: this.weight,
+        width: this.width,
+        height: this.height,
+    };
+    const response = await axios.post("https://pacific-brushlands-68509.herokuapp.com/clearance", data)
+    console.log(response)
+    if ( response.status == 200) {
+        alert("Success, Thanks")
+    }
+    },
+},
+};
 </script>
 
 <style scoped>
@@ -219,7 +255,7 @@ export default {
     color: #fff;
 }
 .mart{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .marb{
     margin-bottom: 100px;

@@ -14,12 +14,12 @@
     </div>
     <!-- Background image -->
     <div class="all-logos">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6" style="margin-top: 70px;">
+        <div class="container mb-5" style="margin-top: 6rem">
+            <div class="row d-flex align-content-center">
+                <div class="col-xs-12 col-md-6" data-aos="fade-left" data-aos-duration="1000">
                     <img src="@/assets/it-logo.png" class="img-fluid">
                 </div>
-                <div class="col-xs-12 col-md-6 text-center" style="margin-top: 80px;">
+                <div class="col-xs-12 col-md-6 text-center" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="text-center font-weight-bolder text-success">{{$t('it-header')}}</h2>
                     <p class="subtitle">
                         {{$t('it-prag')}}
@@ -33,13 +33,13 @@
     <section class="mt-5 mb-5 p-5" style="background: #f5f5f5">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-lg-3">
+                <div class="col-xs-12 col-lg-3" data-aos="fade-down" data-aos-duration="1000">
                     <div class="bg-secondary left-hand-path d-flex align-items-centers" style="flex-direction: column">
                         <h6 class="font-weight-bold text-center text-light mb-2">{{$t('logi-aou-left')}}</h6>
                         <button class="btn btn-success text-light">{{$t('it-btn-caru1')}} <i class="uil uil-arrow-right"></i></button>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-9">
+                <div class="col-xs-12 col-lg-9" data-aos="fade-up" data-aos-duration="1000">
                     <h1 class="mb-3 font-weight-bold offer mb-5 text-success">{{$t('it-header-2')}}</h1>
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-lg-4 mb-5">
@@ -88,13 +88,13 @@
         <div class="container">
             <h1 class="text-center font-weight-bold mb-5">{{$t('it-header-3')}}</h1>
             <div class="row">
-                <div class="col-xs-12 col-lg-6 bg-news p-5 mb-3">
+                <div class="col-xs-12 col-lg-6 bg-news p-5 mb-3" data-aos="fade-up" data-aos-duration="1000">
                     <div style="opacity:0.9">
                     <h1 class="text-light">{{$t('it-subhead')}}</h1>
                     <p class="text-light"><i class="uil uil-user"></i> {{$t('it-person')}} | <i class="uil uil-calender"></i> {{$t('it-date')}} | <i class="uil uil-tag"></i> {{$t('it-tag')}}</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-6">
+                <div class="col-xs-12 col-lg-6" data-aos="fade-down" data-aos-duration="1000">
                     <div class="row">
                         <div class="col-12">
                             <h5 class="mb-1">{{$t('it-news-header1')}}</h5>
@@ -130,32 +130,32 @@
     <section class="mt-5 mb-5 p-5" style="background: #203240d9">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-lg-6 mt-5">
+                <div class="col-xs-12 col-lg-6 mt-5" data-aos="fade-left" data-aos-duration="1000">
                     <h5 class="text-light text-uppercase">{{$t('it-contact-header1')}} <span class="text-danger">{{$t('it-contact-header2')}}</span></h5>
                     <h1 class="text-light font-weight-bold text-uppercase">{{$t('it-contact-header3')}}<br> {{$t('it-contact-header4')}}<br> {{$t('it-contact-header5')}}</h1>
                 </div>
-                <div class="col-xs-12 col-lg-6 rounded p-3" style="background:#fff">
+                <div class="col-xs-12 col-lg-6 rounded p-3" style="background:#fff" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="font-weight-bold m-3">{{$t('it-contact-header6')}} <span class="text-success">{{$t('it-contact-header7')}}</span></h1>
-                    <form>
+                    <form ref="form" @submit.prevent="sendIt">
                         <div class="form-group mb-3">
                             <label for="name">{{$t('name')}}</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" v-model="name" class="form-control" id="name">
                         </div>
                         <div class="form-group mb-3">
                             <label for="phone">{{$t('phone')}}</label>
-                            <input type="text" class="form-control" id="phone">
+                            <input type="text" v-model="phone" class="form-control" id="phone">
                         </div>
                         <div class="form-group mb-3">
                             <label for="email">{{$t('mail')}}</label>
-                            <input type="text" class="form-control" id="email">
+                            <input type="text" v-model="email" class="form-control" id="email">
                         </div>
                         <div class="form-group mb-3">
                             <label for="domain">{{$t('it-contact-input1')}}</label>
-                            <input type="text" class="form-control" id="domain">
+                            <input type="text" v-model="domain" class="form-control" id="domain">
                         </div>
                         <div class="form-group mb-3">
                             <label for="message">{{$t('it-contact-input2')}}</label>
-                            <textarea class="form-control" id="message" rows="10"></textarea>
+                            <textarea class="form-control" v-model="explanation" id="message" rows="10"></textarea>
                         </div>
                         <div class="text-center mt-3">
                             <button type="submit" class="btn btn-success">{{$t('subm')}}</button>
@@ -169,11 +169,37 @@
 
 <script>
 import { MDBBtn } from 'mdb-vue-ui-kit';
+import axios from 'axios'
 export default {
     name:"It",
+    data(){
+        return{
+        name: '',
+        phone: '',
+        email: '',
+        domain: '',
+        explanation: '',
+        }
+    },
     components:{
         MDBBtn,
     },
+    methods: {
+        async sendIt() {
+            const data = {
+                name: this.name,
+                phone: this.phone,
+                email: this.email,
+                domain: this.domain,
+                explanation: this.explanation,
+            }
+            const response = await axios.post("http://pacific-brushlands-68509.herokuapp.com/it", data)
+            console.log(response)
+            if (response.status == 200) {
+                alert("Success, Thanks")
+            }
+        }
+    }
 }
 </script>
 
